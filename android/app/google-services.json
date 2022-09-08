@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "164659204961",
+    "project_id": "shopcom-b9722",
+    "storage_bucket": "shopcom-b9722.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:164659204961:android:b03d362010cf3c0161ab20",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "164659204961-m423c0fqr8ted29n75921gm9s8uveiak.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMPK7X_JLOpm92OwzsvMnpBfPswzhkYKU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "164659204961-m423c0fqr8ted29n75921gm9s8uveiak.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
