@@ -6,23 +6,38 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
+      body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.all(60.0),
-          child: Column(
-            children: [
-              Image.asset(
-                'assets/Ecommerce.png',
-                height: 100,
-              ),
-              const Text("Lista de Aplicações"),
-              TextFormField(
-                keyboardType: TextInputType.emailAddress,
-                decoration: const InputDecoration(
-                  hintText: 'Email',
+          padding:
+              const EdgeInsets.only(top: 8.0, bottom: 30, left: 25, right: 25),
+          child: Center(
+            child: Column(
+              children: [
+                Image.asset(
+                  'assets/Ecommerce.png',
+                  height: 100,
                 ),
-              )
-            ],
+                const SizedBox(
+                  height: 50,
+                ),
+                const Text("Lista de Aplicações"),
+                const SizedBox(
+                  height: 30,
+                ),
+                TextFormField(
+                  keyboardType: TextInputType.emailAddress,
+                  decoration: const InputDecoration(
+                    hintText: 'Email',
+                  ),
+                ),
+                TextFormField(
+                  keyboardType: TextInputType.emailAddress,
+                  decoration: const InputDecoration(
+                    hintText: 'Senha',
+                  ),
+                )
+              ],
+            ),
           ),
         ),
       ),
