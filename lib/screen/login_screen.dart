@@ -20,7 +20,13 @@ class LoginScreen extends StatelessWidget {
                 const SizedBox(
                   height: 50,
                 ),
-                const Text("Lista de Aplicações"),
+                const Text(
+                  "Lista de Aplicações",
+                  style: TextStyle(
+                      color: Colors.blue,
+                      fontSize: 25,
+                      fontWeight: FontWeight.bold),
+                ),
                 const SizedBox(
                   height: 30,
                 ),
@@ -35,7 +41,12 @@ class LoginScreen extends StatelessWidget {
                   decoration: const InputDecoration(
                     hintText: 'Senha',
                   ),
-                )
+                ),
+                const SizedBox(
+                  height: 30,
+                ),
+                ElevatedButton(onPressed: () {}, child: const Text("Entrar")),
+                ElevatedButton(onPressed: () {}, child: const Text("Registrar"))
               ],
             ),
           ),
