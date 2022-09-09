@@ -30,23 +30,35 @@ class LoginScreen extends StatelessWidget {
                 const SizedBox(
                   height: 30,
                 ),
-                TextFormField(
-                  keyboardType: TextInputType.emailAddress,
-                  decoration: const InputDecoration(
-                    hintText: 'Email',
-                  ),
-                ),
-                TextFormField(
-                  keyboardType: TextInputType.emailAddress,
-                  decoration: const InputDecoration(
-                    hintText: 'Senha',
-                  ),
-                ),
-                const SizedBox(
-                  height: 30,
-                ),
-                ElevatedButton(onPressed: () {}, child: const Text("Entrar")),
-                ElevatedButton(onPressed: () {}, child: const Text("Registrar"))
+                ListView(
+                  shrinkWrap: true,
+                  children: [
+                    TextFormField(
+                      keyboardType: TextInputType.emailAddress,
+                      decoration: const InputDecoration(
+                        hintText: 'Email',
+                      ),
+                    ),
+                    TextFormField(
+                      keyboardType: TextInputType.emailAddress,
+                      decoration: const InputDecoration(
+                        hintText: 'Senha',
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 30,
+                    ),
+                    Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          ElevatedButton(
+                              onPressed: () {}, child: const Text("Entrar")),
+                          ElevatedButton(
+                              onPressed: () {},
+                              child: const Text("Registrar-se")),
+                        ]),
+                  ],
+                )
               ],
             ),
           ),
