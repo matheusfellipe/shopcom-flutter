@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutter/material.dart';
+import 'package:flutter_application_1/screen/sign_up_screen.dart';
 
 import '../common/text_form_item.dart';
 
@@ -63,7 +63,11 @@ class LoginScreenNew extends StatelessWidget {
               SizedBox(
                 width: 150,
                 child: ElevatedButton(
-                    onPressed: () {}, child: const Text("Registrar-se")),
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const SingUpScreen()));
+                    },
+                    child: const Text("Registrar-se")),
               ),
             ]),
           ],
