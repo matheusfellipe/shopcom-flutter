@@ -9,13 +9,17 @@ class LoginScreen extends StatelessWidget {
       body: SafeArea(
         child: Padding(
           padding:
-              const EdgeInsets.only(top: 8.0, bottom: 30, left: 25, right: 25),
+              const EdgeInsets.only(top: 8.0, bottom: 30, left: 15, right: 15),
           child: Center(
             child: Column(
+              mainAxisSize: MainAxisSize.min,
               children: [
-                Image.asset(
-                  'assets/Ecommerce.png',
-                  height: 100,
+                Flexible(
+                  flex: 1,
+                  child: Image.asset(
+                    'assets/Ecommerce.png',
+                    height: 100,
+                  ),
                 ),
                 const SizedBox(
                   height: 50,
@@ -30,34 +34,37 @@ class LoginScreen extends StatelessWidget {
                 const SizedBox(
                   height: 30,
                 ),
-                ListView(
-                  shrinkWrap: true,
-                  children: [
-                    TextFormField(
-                      keyboardType: TextInputType.emailAddress,
-                      decoration: const InputDecoration(
-                        hintText: 'Email',
+                Card(
+                  margin: const EdgeInsets.symmetric(horizontal: 16),
+                  child: ListView(
+                    shrinkWrap: true,
+                    children: [
+                      TextFormField(
+                        keyboardType: TextInputType.emailAddress,
+                        decoration: const InputDecoration(
+                          hintText: 'Email',
+                        ),
                       ),
-                    ),
-                    TextFormField(
-                      keyboardType: TextInputType.emailAddress,
-                      decoration: const InputDecoration(
-                        hintText: 'Senha',
+                      TextFormField(
+                        keyboardType: TextInputType.emailAddress,
+                        decoration: const InputDecoration(
+                          hintText: 'Senha',
+                        ),
                       ),
-                    ),
-                    const SizedBox(
-                      height: 30,
-                    ),
-                    Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          ElevatedButton(
-                              onPressed: () {}, child: const Text("Entrar")),
-                          ElevatedButton(
-                              onPressed: () {},
-                              child: const Text("Registrar-se")),
-                        ]),
-                  ],
+                      const SizedBox(
+                        height: 30,
+                      ),
+                      Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            ElevatedButton(
+                                onPressed: () {}, child: const Text("Entrar")),
+                            ElevatedButton(
+                                onPressed: () {},
+                                child: const Text("Registrar-se")),
+                          ]),
+                    ],
+                  ),
                 )
               ],
             ),
