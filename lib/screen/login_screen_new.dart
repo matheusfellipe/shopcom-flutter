@@ -34,13 +34,23 @@ class LoginScreenNew extends StatelessWidget {
             const SizedBox(
               height: 30,
             ),
-            textFormItem(context, 'E-mail', false),
-            const SizedBox(
-              height: 15,
+            Card(
+              color: Colors.teal.shade300,
+              child: Padding(
+                padding: const EdgeInsets.all(12.0),
+                child: Column(
+                  children: [
+                    textFormItem(context, 'E-mail', false),
+                    const SizedBox(
+                      height: 15,
+                    ),
+                    textFormItem(context, 'Senha', false),
+                  ],
+                ),
+              ),
             ),
-            textFormItem(context, 'Senha', false),
             const SizedBox(
-              height: 15,
+              height: 30,
             ),
             Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
               SizedBox(
