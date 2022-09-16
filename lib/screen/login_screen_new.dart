@@ -38,7 +38,15 @@ class LoginScreenNew extends StatelessWidget {
             const SizedBox(
               height: 15,
             ),
-            textFormItem(context, 'Senha', false)
+            textFormItem(context, 'Senha', false),
+            const SizedBox(
+              height: 15,
+            ),
+            Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+              ElevatedButton(onPressed: () {}, child: const Text("Entrar")),
+              ElevatedButton(
+                  onPressed: () {}, child: const Text("Registrar-se")),
+            ]),
           ],
         ),
       ),
