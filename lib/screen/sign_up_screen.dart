@@ -7,9 +7,8 @@ class SingUpScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      child: SizedBox(
-        width: MediaQuery.of(context).size.width * 85,
-        child: Column(
+      child: Scaffold(
+        body: Column(
           children: [
             textFormItem(context, "Nome", false),
             textFormItem(context, "Email", false),
